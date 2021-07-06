@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function setFullName(){
+     var fName=document.getElementById("firstname");
+     var mName=document.getElementById("middlename");
+     var lName=document.getElementById("lastname");
+     var fullName=document.getElementById("fullname");
+     fullName.value=fName.value + " " + mName.value + " " +lName.value;
+     console.log(fName)
+     
+    }
+    function clearyou(){
+        var clearfullName=document.getElementById("fullname");
+        var clearfName=document.getElementById("firstname");
+        var clearmName=document.getElementById("middlename");
+        var clearlName=document.getElementById("lastname");
+
+        clearfullName.value=" "
+        clearfName.value=" "
+        clearmName.value=" "
+        clearlName.value=" "
+    }
+  </script>
+<body>
+    <h1><sup style="color: turquoise;"<b>Employees Details</b></sup></h1>
+    <br>
+   <b><hr></b>
+    
+    <h3><sup style="color:orangered">Employee Info</h3></sup>
+
+    <ul type="square">
+    <li><label><b>First Name: </b></label></li>
+    <input type="text" id = "firstname"></input>
+    <br>
+    <br><li><label><b>Middle Name: </b></label></li>
+    <input type="text" id = "middlename"></input>
+    <br>
+    <br><li><label><b>Last Name: </b></label></li>
+    <input type="text" id="lastname"> 
+</ul>
+    
+    
+    <br>
+    <br><label><b>Full Name:</b></label>
+    <input type="text" id="fullname"></input><br>
+    <br><button onclick="setFullName()"><sup style="color:green"><b>Full Name</b></button></sup>
+    <button onclick="clearyou()"><b><sup style="color:red"> Clear</b></button>
+
+    <hr>
+    </body>
+</html>
