@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var toggle=true;
+        
+        function clickMe(id){
+            var objMe= document.getElementById(id);
+            var objPlayer=document.getElementById("player");
+            if(toggle){
+                objMe.style="color:darkgreen; font-size:100px";
+                objPlayer.innerHTML="Tajjamul";
+                objPlayer.style="color:yellow; font-size:100px";
+                toggle=false;
+            }else{
+                objMe.style="color:yellow; font-size:100px";
+                objPlayer.innerHTML="Sameer";
+                objPlayer.style="color:darkgreen; font-size:100px";
+                toggle=true;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p><span id="player" style="color: darkgreen; font-size:100px">Sameer</span></p>
+    <table border="2px">
+        <tr>
+            <td>
+                <span id="11" onclick="clickMe('11')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="12" onclick="clickMe('12')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="13" onclick="clickMe('13')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="21" onclick="clickMe('21')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="22" onclick="clickMe('22')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="23" onclick="clickMe('23')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="31" onclick="clickMe('31')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="32" onclick="clickMe('32')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+            <td>
+                <span id="33" onclick="clickMe('33')" style="color:brown; font-size: 100px;">00</span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
