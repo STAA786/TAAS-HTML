@@ -1,0 +1,22 @@
+a{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+nav{
+    background-color: cyan;
+    padding: 20px;
+}
+input{
+    float: right;
+}
+a:hover{
+    background-color:black;
+    color: white;
+    border-radius: 50px;
+}
+img{
+    width:100px;
+    height:100px;
+}

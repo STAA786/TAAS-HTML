@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="navigation.css">
+<head>
+    <script>
+        function setShowValue(){
+              sessionStorage.setItem("fav",document.getElementById("color12").value)
+        }
+        function getShowValue(){
+            document.getElementById("color12").value= sessionStorage.getItem("fav")
+
+            document.getElementById("body").style=`background-color: ${sessionStorage.getItem("fav")}`;
+        }
+    </script>
+
+
+    
+</head>
+<body id="body">
+    
+    <img src="./src/img/picku.png">
+    <button  style="color:red" name="fav" type="button" onclick="setShowValue(alert('Navigate page for effect'))"  >color</button>
+    <input type="color" name="fav"  id="color12"><br>
+      <nav>
+        <a href="./home.html">Home</a>
+        <a href="./navabout.html">About Us</a>
+        <a href="./FORM.HTML">Admision</a>
+        <a href="./course.html">Courses</a>
+        <a href="./contact.html">Contacts Us</a>
+        <a href="./fig.html">Placement</a>
+        <input type="search" placeholder="search">
+        <input type="button">
+    </nav>
+    
+</body>
+<script>getShowValue()</script>
+</html>

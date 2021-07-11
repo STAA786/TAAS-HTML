@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="navigation.css">
+<head>
+    <script>
+        function setStoreValue(){
+      
+      sessionStorage.setItem("password" ,document.getElementById("password").value)
+      sessionStorage.setItem("FirstName" ,document.getElementById("fName").value)
+      sessionStorage.setItem("MiddleName" ,document.getElementById("mName").value)
+      sessionStorage.setItem("LastName" ,document.getElementById("lName").value)
+      sessionStorage.setItem("Contact" ,document.getElementById("contact").value)
+      sessionStorage.setItem("Age" ,document.getElementById("age").value)
+      sessionStorage.setItem("Gender" ,document.getElementById("gender").value)
+      sessionStorage.setItem("Exp" ,document.getElementById("exp").value)
+      sessionStorage.setItem("favColor" ,document.getElementById("colorPicker").value)
+           
+        
+    }
+    function getStoreValue(){
+       document.getElementById("fName").value=sessionStorage.getItem("FirstName")   
+       document.getElementById("mName").value=sessionStorage.getItem("mName")   
+       document.getElementById("lName").value=sessionStorage.getItem("firstname")   
+       document.getElementById("password").value=sessionStorage.getItem("password") 
+       document.getElementById("Contact").value=sessionStorage.getItem("contact") 
+       document.getElementById("Age").value=sessionStorage.getItem("Age") 
+       document.getElementById("Gender").value=sessionStorage.getItem("Gender") 
+       document.getElementById("Exp").value=sessionStorage.getItem("exp") 
+        
+       
+       document.getElementById("colorPicker").value= sessionStorage.getItem("favColor")
+       document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+       document.getElementById("form1").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+             
+    }
+    </script>
+    
+    <title>PickupBiz</title>
+</head>
+<style>
+    form{
+        background-color: springgreen;
+        text-align:;
+
+    }
+</style>
+<body id="body">
+    <nav>
+        <a href="./home.html">Home</a>
+        <a href="./navabout.html">About Us</a>
+        <a href="./FORM.HTML">Admision</a>
+        <a href="./course.html">Courses</a>
+        <a href="./contact.html">Contacts Us</a>
+        <a href="./fig.html">Placement</a>
+        <input type="search" placeholder="search">
+        <input type="button">
+    </nav>
+    <form id="form1">
+        <center><h1><span style="color: rgb(255, 0, 55);"><b>PickupBiz Consultancy & Training Development</b></span></h1></center>
+        <h4><marquee behavior="alternativ" scrollamount="05" direction=""><span style="color: rgb(162, 0, 255);"><b>Hurry Up Limited Seat</marquee></b></span></h4>
+        
+        <label><b>color:</b></label><input type="color" name="favColor" id="colorPicker"><br>
+
+        <hr>
+        <h4><label> Institute Login :</label> 
+        <input id="password" type="password"></h4>
+        <br>
+            
+        <fieldset>
+            <legend>Registration Form </legend>
+        <h3><b><u>Trainee Information  </u></h3></label> 
+            <label><b>First Name: </b></label>
+            <input type="text" id ="fName">
+            
+            <label><b>Middle Name: </b></label>
+            <input type="text" id ="mName">
+            <br>
+            <br><label><b>Last Name: </b></label>
+            <input type="text" id="lName"> 
+            <br>
+            <br><label><b>Contact No.</b></label>
+            <input type="number" id="contact"><br>
+            <br><label><b>Address: </b></label>
+            <input type="text" id="addr"> 
+            <br>
+            
+            
+            <br><label><b>Gender: </b></label>
+             <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female"name="gender" value="Female">Female
+            <input type="radio" id="trans" name="gender" value="Transgender">Transgender
+            <br>
+            <br><label><b>Age: </b></label>
+            <input type="date" id="age"> 
+            
+            
+            <br><label><b>Exp Year: </b></label>
+            <input type="number" min="0" max="10" step="0.5" id="exp"> 
+            
+            <br><br><label><b>Select Course: </b></label><br>
+            <input type="checkbox" name="WebDevop" value="">WebDevop
+            <input type="checkbox" name="Cloud" value="">Cloud Computing
+            <input type="checkbox" name="AI" value="">Artificial Intelligence<br>
+            <input type="checkbox" name="CS" value="">Cyber Security
+            <input type="checkbox" name="BD" value="">Big Data Mgmt
+            <input type="checkbox" name="EB" value="">Emmbeded System<br>
+            <input type="checkbox" name="DS" value="">Data Science
+            <input type="checkbox" name="NE" value="">Networking
+            <input type="checkbox" name="PD" value="">PDAC
+                       
+            <br>
+            
+            <hr>
+            <b><label>RESUME :</label></b>
+            <input type="file">
+            <button type="submit" onclick="setStoreValue()">Submit</button>
+            <button>Clear</button>
+                     
+       
+    </form>
+</fieldset>
+    
+</body>
+<script>getStoreValue()</script>
+</html>
