@@ -10,7 +10,7 @@ a{
 }
 nav{
     background-color: cyan;
-     padding: 20px;
+    /* padding: 20px; */
 }
 input{
     float: right;
