@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="navigation.css">
+
+    
 <head>
+    <title>PickupBiz</title>
     <script>
         function setStoreValue(){
-      
-      sessionStorage.setItem("password" ,document.getElementById("password").value)
       sessionStorage.setItem("FirstName" ,document.getElementById("fName").value)
       sessionStorage.setItem("MiddleName" ,document.getElementById("mName").value)
       sessionStorage.setItem("LastName" ,document.getElementById("lName").value)
-      sessionStorage.setItem("Contact" ,document.getElementById("contact").value)
+      sessionStorage.setItem("Contact" ,document.getElementById("mob").value)
+      sessionStorage.setItem("Address" ,document.getElementById("add").value)
+      sessionStorage.setItem("Gender" ,document.getElementById("gen").value)
+      sessionStorage.setItem("Gender" ,document.getElementById("gen2").value)
+      sessionStorage.setItem("Gender" ,document.getElementById("gen3").value)
       sessionStorage.setItem("Age" ,document.getElementById("age").value)
-      sessionStorage.setItem("Gender" ,document.getElementById("gender").value)
       sessionStorage.setItem("Exp" ,document.getElementById("exp").value)
       sessionStorage.setItem("favColor" ,document.getElementById("colorPicker").value)
-           
-        
-    }
+        }
     function getStoreValue(){
-       document.getElementById("fName").value=sessionStorage.getItem("FirstName")   
-       document.getElementById("mName").value=sessionStorage.getItem("mName")   
-       document.getElementById("lName").value=sessionStorage.getItem("firstname")   
-       document.getElementById("password").value=sessionStorage.getItem("password") 
-       document.getElementById("Contact").value=sessionStorage.getItem("contact") 
-       document.getElementById("Age").value=sessionStorage.getItem("Age") 
-       document.getElementById("Gender").value=sessionStorage.getItem("Gender") 
+       document.getElementById("FirstName").value=sessionStorage.getItem("fName")   
+       document.getElementById("MiddleName").value=sessionStorage.getItem("mName")   
+       document.getElementById("LastName").value=sessionStorage.getItem("lName")   
+       document.getElementById("Contact").value=sessionStorage.getItem("mob") 
+       document.getElementById("Address").value=sessionStorage.getItem("add") 
+       document.getElementById("Gender").value=sessionStorage.getItem("gen") 
+       document.getElementById("Gender").value=sessionStorage.getItem("gen2") 
+       document.getElementById("Gender").value=sessionStorage.getItem("gen3")
+       document.getElementById("Age").value=sessionStorage.getItem("age") 
        document.getElementById("Exp").value=sessionStorage.getItem("exp") 
-        
-       
        document.getElementById("colorPicker").value= sessionStorage.getItem("favColor")
        document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favColor")}`;
-       document.getElementById("form1").style=`background-color: ${sessionStorage.getItem("favColor")}`;
-             
+       document.getElementById("form").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+             console.log()
     }
     </script>
     
-    <title>PickupBiz</title>
 </head>
 <style>
     form{
         background-color: springgreen;
-        text-align:;
+        
 
     }
 </style>
@@ -48,29 +49,24 @@
     <nav>
         <a href="./home.html">Home</a>
         <a href="./navabout.html">About Us</a>
-        <a href="./FORM.HTML">Admision</a>
+        <a href="./FOR22.html">Admision</a>
         <a href="./course.html">Courses</a>
         <a href="./contact.html">Contacts Us</a>
         <a href="./fig.html">Placement</a>
         <input type="search" placeholder="search">
         <input type="button">
     </nav>
-    <form id="form1">
-        <center><h1><span style="color: rgb(255, 0, 55);"><b>PickupBiz Consultancy & Training Development</b></span></h1></center>
+    <form>
+      <center> <h1><span style="color: rgb(255, 0, 55);"><b>PickupBiz Consultancy & Training Development</b></span></h1></center>
         <h4><marquee behavior="alternativ" scrollamount="05" direction=""><span style="color: rgb(162, 0, 255);"><b>Hurry Up Limited Seat</marquee></b></span></h4>
         
-        <label><b>color:</b></label><input type="color" name="favColor" id="colorPicker"><br>
-
-        <hr>
-        <h4><label> Institute Login :</label> 
-        <input id="password" type="password"></h4>
-        <br>
-            
+        <label><b>color:</b></label><input type="color" onclick="setStoreValue()"  name="favColor" id="colorPicker"><br>
+       
         <fieldset>
             <legend>Registration Form </legend>
         <h3><b><u>Trainee Information  </u></h3></label> 
             <label><b>First Name: </b></label>
-            <input type="text" id ="fName">
+            <input type="text" id ="fName"><br><br>
             
             <label><b>Middle Name: </b></label>
             <input type="text" id ="mName">
@@ -79,19 +75,17 @@
             <input type="text" id="lName"> 
             <br>
             <br><label><b>Contact No.</b></label>
-            <input type="number" id="contact"><br>
+            <input type="number" id="mob"><br>
             <br><label><b>Address: </b></label>
-            <input type="text" id="addr"> 
-            <br>
-            
-            
+            <input type="text" id="add"> 
+            <br>             
             <br><label><b>Gender: </b></label>
-             <input type="radio" id="male" name="gender" value="male">Male
-            <input type="radio" id="female"name="gender" value="Female">Female
-            <input type="radio" id="trans" name="gender" value="Transgender">Transgender
+            <input type="radio"  name="gender" value="Male" id="gen1">Male
+            <input type="radio"  name="gender" value="Female" id="gen2">Female
+            <input type="radio" name="gender" value="Transgender" id="gen3" >Transgender
             <br>
             <br><label><b>Age: </b></label>
-            <input type="date" id="age"> 
+            <input type="date" id="age"> <br>
             
             
             <br><label><b>Exp Year: </b></label>
@@ -117,8 +111,9 @@
             <button>Clear</button>
                      
        
-    </form>
+    
 </fieldset>
+</form>
     
 </body>
 <script>getStoreValue()</script>

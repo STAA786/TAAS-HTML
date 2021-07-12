@@ -1,7 +1,7 @@
 a{
     padding: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    color:blue;
+    text-decoration:none;
 
 }
 nav{
@@ -12,11 +12,8 @@ input{
     float: right;
 }
 a:hover{
-    background-color:black;
-    color: white;
+    background-color:white;
+    color:yellowgreen;
     border-radius: 50px;
 }
-img{
-    width:100px;
-    height:100px;
-}
+

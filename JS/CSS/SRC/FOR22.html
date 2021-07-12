@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+    <title>PickupBiz</title>
+    
+    
+</head>
+<style>
+    form{
+        background-color:paleturquoise
+        
+
+    }
+    center{
+           background-color:snow;
+           text-align:top;
+    }
+    legend{
+           text-align: center;
+    }
+    img{
+         width:100px;
+         height:50px;
+
+    }
+    form{
+          width:600px;
+          height:400px;
+        }
+        
+</style>
+<body background="./src/img/prog.gif">
+
+    <img  src="./src/img/picku.png" alt="">
+
+    <nav>
+        <a href="./home.html">Home</a>
+        <a href="./navabout.html">About Us</a>
+        <a href="./FOR22.html">Admision</a>
+        <a href="./course.html">Courses</a>
+        <a href="./contact.html">Contacts Us</a>
+        <a href="./fig.html">Placement</a>
+        
+        <input type="search" placeholder="search">
+        <input type="button">
+    </nav>
+      
+    
+    <center> <h1><span style="color: rgb(255, 0, 55);"><b>PickupBiz Consultancy & Training Development</b></span></h1></center>
+
+        <h4><marquee behavior="alternativ" scrollamount="05" direction=""><span style="color: rgb(162, 0, 255);"><b>Hurry Up Limited Seat</marquee></b></span></h4>
+       
+    <form >    
+        <fieldset>
+            <legend>Registration Form </legend>
+        
+        
+        <h3><b><u>Trainee Information  </u></h3>
+            <b><lable> First Name : </label></b>
+            <input type="text" placeholder="enter your first name">   
+            <b><label> Middle Name : </label></b>
+            <input type="text" placeholder="enter your middle name"><br>
+            <br><b><label> Last Name : </label></b>
+            <input type="text" placeholder="enter your last name"><br>
+            <br>
+            <b><label>Gender : </label></b>
+            <input type="radio" name=gender value="">Male
+            <input type="radio" name=gender value="">Female
+            <input type="radio" name=gender value="">Transgender
+            <br>
+            <br><b><label>Contact No :</label></b>
+            <input type="number" placeholder="enter mob no"  min="0" max="9" name="number" id="mob"><br>
+            <br><label><b>Email :</b></label>
+            <input type="text" placeholder="enter your email id" name="" id=""><br><br>
+             <label ><b>Enter Password</b></label>
+             <input type="password" placeholder="enter your password">
+             <br><br><label ><b>Enter Password</b></label>
+             <input type="password" placeholder="enter your password">
+            </fieldset>
+            </form>
+            <form>
+            <fieldset>
+            <b><label>Address : </label></b>
+            <input type="text" width="5px">
+            <br><br>
+            <label><b>D.O.B : </b></label>
+            <input type="date" id="age"> <br>
+            <br><label><b>Work Exp: </b></label>
+            <input type="number" min="0" max="10" step="0.5" id="exp"> <br><br>
+                       
+            <label><b>Select Interested Course : </b></label>
+            <input type="checkbox" name="" value="">WebDevop
+            <input type="checkbox" name="" value="">Cloud Computing
+            <input type="checkbox" name="" value="">Artificial Intelligence 
+            <input type="checkbox" name="" value="">Cyber Security
+            <input type="checkbox" name="" value="">Big Data Mgmt
+            <input type="checkbox" name="" value="">Emmbeded System
+            <input type="checkbox" name="" value="">Data Science
+            <input type="checkbox" name="" value="">Networking
+            <input type="checkbox" name="" value="">PDAC
+        </fieldset>    
+        
+        
+        <b><label>RESUME :</label></b>
+            <input type="file">
+            <button type="submit" onclick="setStoreValue()">Submit</button>
+            <button>Clear</button>
+            </form>
+            </html>
