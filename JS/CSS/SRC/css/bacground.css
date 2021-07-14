@@ -1,0 +1,28 @@
+body{
+    background-image:url(../src/img/pexels-michael-block-3225517.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+       
+}
+div{
+    marging:40px;
+}
+.para1{
+      color:white;
+      background-image: url(../src/img/pexels-alex-andrews-816608.jpg);
+      background-size: cover;
+
+      
+}
+.para2{color:greenyellow;
+      background-image:url(../src/img/pexels-frans-van-heerden-624015.jpg);
+      background-size: cover;
+      
+}
+.para2{
+         background-color: salmon;
+         padding: 10px;
+         text-align:justify;
+         background-repeat: no-repeat;
+         background-position: center;
+}
